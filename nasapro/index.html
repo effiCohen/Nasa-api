@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!--Icon-->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+
+
+
+  <script src="/app.js" type="text/javascript" defer></script>
+
+  <link rel="stylesheet" href="/st.css">
+  <title>NASA</title>
+</head>
+
+<body>
+
+  <nav class="navbar  sticky-top">
+    <div class="right">
+      <div class="top">
+        <div class="them-tugler" id="else">
+          <span class="material-icons-sharp " id="bgblack"> wb_sunny</span>
+          <span class="material-icons-sharp" id="bglight"> dark_mode</span>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header>
+
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="vid">
+      <source src="vid/pexels-ahnaf-piash-5747525.mp4" type="video/mp4" id="darkvid">
+      <source src="/vid/pexels-rodnae-productions-8474612.mp4" type="video/mp4" id="lightvid">
+    </video>
+
+
+    <!-- The header content -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-2" id="text"><b class="color-b display-1">N</b>ASA</h1>
+          <p class="lead mb-0 color-p">"To Infinity, And Beyond!"</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mb-4 mb-md-1 mt-2">
+        <div data-mdb-toggle-button="true" data-mdb-format="yyyy-mm-dd" id="date-picker">
+          <input type="date" class="form-control" id="wrapper-date" data-mdb-toggle="datepicker" value="" />
+          <button onclick="getDate()" class="btn  btn-rounded mt-2 bg-btn">Click for Change</button>
+        </div>
+
+        <h4 class="mb-3">
+          <strong>Astronomy Picture of the Day (<u id="intro-date"></u>)</strong>
+        </h4>
+        <div class="bg-image ">
+
+          <a href="" id="wrapper-hdurl">
+            <img src="" id="wrapper-url" class="rounded w-100" />
+          </a>
+        </div>
+
+      </div>
+      <div class="col-md-3 mb-4 mb-md-2 mt-2">
+        <h4 id="wrapper-title"></h4>
+        <p class="mb-2 color-l style=" --bs-text-opacity: .5">Copyright: <span id="wrapper-copyright"></span></p>
+        <p id="wrapper-explanation" class=""></p>
+
+
+
+      </div>
+    </div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path class="color-suns" fill-opacity="1"
+      d="M0,128L0,288L130.9,288L130.9,256L261.8,256L261.8,96L392.7,96L392.7,128L523.6,128L523.6,256L654.5,256L654.5,128L785.5,128L785.5,192L916.4,192L916.4,192L1047.3,192L1047.3,288L1178.2,288L1178.2,256L1309.1,256L1309.1,96L1440,96L1440,0L1309.1,0L1309.1,0L1178.2,0L1178.2,0L1047.3,0L1047.3,0L916.4,0L916.4,0L785.5,0L785.5,0L654.5,0L654.5,0L523.6,0L523.6,0L392.7,0L392.7,0L261.8,0L261.8,0L130.9,0L130.9,0L0,0L0,0Z">
+    </path>
+  </svg>
+  <div class="container bg-vid">
+    <div class="card-group    ">
+      <div class=" col-md-4 col-sm-9 mt-2  ">
+        <div class="card bg-dark text-white  zindex-dropdown ">
+          <img src="/vid/try1.jpg" class="card-img w-100" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title color-h">Card title</h5>
+            <p class="card-text color-p-card">This is a wider card with supporting text below as a natural lead-in to
+              additional
+              content. This content is a little bit longer.</p>
+
+            <div class="btnd  color-p-card">
+              <button class="glass-button color-p-card  ">Click Me</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class=" col-md-4 col-sm-9 p-2 ">
+        <div class="card bg-dark text-white">
+          <img src="/vid/try4.jpg" class="card-img w-100" alt="...">
+          <div class="card-img-overlay">
+            <h5 class=" color-h">Card title</h5>
+            <p class="card-text color-p-card">This is a wider card with supporting text below as a natural lead-in to
+              additional
+              content. This content is a little bit longer.</p>
+            <div class="btnd  color-p-card">
+              <button class="glass-button color-p-card  ">Click Me</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class=" col-md-4 col-sm-10 mt-3 p-0 m-0 ">
+        <div class="card bg-dark text-white">
+          <img src="/vid/try8.jpg" class="card-img w-100" alt="...">
+          <div class="card-img-overlay">
+
+            <h5 class="card-title color-h">Card title</h5>
+            <p class="card-text color-p-card">This is a wider card with supporting text below as a natural lead-in to
+              additional
+              content. This content is a little bit longer.</p>
+            <div class="btnd  color-p-card">
+              <a href="/vid/try1.jpg"><button class="glass-button color-p-card   ">Click Me</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <footer>
+    <div id="wave">
+      <div class="footer-top">
+        <div class="container ">
+          <div class="row gy-4">
+            <div class="col-md-3 fo">
+              <h2 class="">NASA</h2>
+            </div>
+            <div class="col-md-2 mb-3">
+              <h5 class="">about</h5>
+              <ul class="list-unstyled">
+                <li><a href="#"> identity</a></li>
+                <li><a href="#"> food</a></li>
+                <li><a href="#"> pS5</a></li>
+                <li><a href="#"> you </a></li>
+
+
+
+              </ul>
+            </div>
+
+            <div class="col-md-2">
+              <h5 class="">lotpre</h5>
+              <ul class="list-unstyled">
+                <li><a href="#"> stodio</a></li>
+                <li><a href="#"> sound</a></li>
+                <li><a href="#"> mIc</a></li>
+                <li><a href="#"> UP</a></li>
+
+
+
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <h5 class="">contact</h5>
+              <ul class="list-unstyled">
+                <li> address : fake 21st, san-fiaro south tel-aviv </li>
+                <li> E-Mail:fake1432@nasa.com</li>
+                <li> phon: (056)555-123</li>
+
+
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+    <div class="footer-bottom py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            @2022 this is the end
+          </div>
+          <div class="col-md-6 d-flex  justify-content-between m-0 ">
+            <div class="social-icon">
+              <a href="#"><i class="bx bx-m bxl-facebook-circle   icon-color "></i></a>
+              <a href="#"><i class='bx bx-m bxl-instagram   icon-color'></i></a>
+              <a href="#"><i class='bx bx-m bxl-twitter   icon-color'></i></a>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
